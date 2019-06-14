@@ -26,3 +26,6 @@ spec:
               memory: 1000Mi
           ports:
             - containerPort: 5432
+          env:
+            - name: POSTGRES_PASSWORD
+              value: "${POSTGRES_PASSWORD}"
