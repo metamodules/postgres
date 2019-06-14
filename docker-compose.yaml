@@ -1,6 +1,6 @@
 version: "2"
 services:
   postgres:
-    image: postgres:11.3
+    image: postgres:9.6.13
     ports:
       - 5432
