@@ -16,4 +16,4 @@ postgres.query('SELECT 1+1', (err, resp) => {
 })
 ```
 
-This is simple wrapper around the [node-postgres](https://github.com/brianc/node-postgres) module which includes the latest stable Postgres image
+This is a simple wrapper around the [node-postgres](https://github.com/brianc/node-postgres) module which includes the latest stable Postgres image
