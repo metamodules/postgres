@@ -8,6 +8,8 @@ spec:
     matchLabels:
       app: postgres
   replicas: 1
+  strategy:
+    type: Recreate
   template:
     metadata:
       labels:
@@ -26,9 +28,9 @@ spec:
               memory: 1000Mi
           ports:
             - containerPort: 5432
-          env:
-            - name: POSTGRES_PASSWORD
-              value: "${POSTGRES_PASSWORD}"
+          envFrom:
+            secretRef:
+              name: postgres
           volumeMounts:
             - mountPath: /var/lib/postgres
               name: postgres-data

@@ -31,9 +31,6 @@
     "host": "POSTGRES_SERVICE_HOST",
     "ports": {
       "POSTGRES_SERVICE_PORT": "5432/tcp"
-    },
-    "serviceEnv": [
-      "POSTGRES_PASSWORD"
-    ]
+    }
   }
 }
